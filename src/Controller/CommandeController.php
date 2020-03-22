@@ -4,9 +4,6 @@ use App\Entity\Panier;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
-/**
- * @Route ("/{_locale}/" )
- */
 class CommandeController extends AbstractController {
 
     /**

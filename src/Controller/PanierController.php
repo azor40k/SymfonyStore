@@ -5,9 +5,6 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Contracts\Translation\TranslatorInterface;
 
-/**
- * @Route ("/{_locale}/" )
- */
 class PanierController extends AbstractController {
 
     /**
