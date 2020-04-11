@@ -27,10 +27,11 @@ class PanierController extends AbstractController {
 
         foreach($cart as $item) {
 
-            //Soustraction de la valeur Acheté à la valeure Totale.
-            // $produit = $em->getRepository(Produit::class)->findOneBy(['id' => $item ]);
-            // $produit->setQuantite(900);            
-            // $em->persist($produit); 
+            $x = $item->getQuantite();
+
+            $quantite = $item->getProduit()->getQuantite() - $x;
+
+            $item->getProduit()->setQuantite($quantite);
 
 
             //Mise Etat > True
